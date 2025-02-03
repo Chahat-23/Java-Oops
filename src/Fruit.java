@@ -3,7 +3,7 @@
 public class Fruit extends Item{
     private String type;
 
-    public Fruit(String type, String name, int quantity) {
+    public Fruit(String name, int quantity, String type) {
         super(name, quantity); // for attributes of super class to be inherited here
         this.type = type;
     }
@@ -12,4 +12,8 @@ public class Fruit extends Item{
         return type;
     }
 
+    @Override
+    public String toString() {
+        return "Fruit: "+getName()+"\nQuantity: "+getQuantity()+"\nType: "+type;
+    }
 }

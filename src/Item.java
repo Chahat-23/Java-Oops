@@ -14,4 +14,10 @@ public class Item {
     public int getQuantity() {
         return quantity;
     }
+
+
+    @Override
+    public String toString() {
+        return "Item: "+name+"\nQuantity: "+quantity;
+    }
 }
